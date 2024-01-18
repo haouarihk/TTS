@@ -9,12 +9,19 @@ tags:
 version: 0.0.1
 disableProvider: true
 ---
+{{#script}}
+```js
+const AUDIO_TEXT = this.selection;
+if(!AUDIO_TEXT || AUDIO_TEXT?.length < 3) 
+throw new Error("You need to select some text before running this template")
+```
+{{/script}}
+
+
 ```handlebars
 You can structure your code here and then use the input or output template to retrieve("get" helper) the processed data, enhancing readability.
 ```
 ***
-This input template is currently disabled due to the 'disabledProvider' setting being set to true.
-
 If you wish to utilize this template with a provider, such as Chatbot or another service, please follow these steps:
 - Enable the provider by setting 'disabledProvider' to false.
 - Cut and paste everything from the output template into this section.
