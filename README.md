@@ -1,4 +1,4 @@
-# Dalle-2 Prompt Templates
+# Text To Speech Prompt Templates
 * You need to [configure OpenAI Key](https://text-gen.com/configure-api-key)
 
 # Prompts 
